@@ -37,13 +37,13 @@
         # 4. nextManChoice
         if currentHusband == None:
           #No Husband case
-          #She accepts any proposal
+          #"She" accepts any proposal
           womanSpouse[she] = he
           manSpouse[he] = she
-          #His nextchoice is the next woman
-          #in his preferences list
+          #"His" nextchoice is the next woman
+          #in the hisPreferences list
           nextManChoice[he] = nextManChoice[he] + 1
-          #Delete him from the 
+          #Delete "him" from the 
           #Unmarried list
           unmarriedMen.pop(0)
         else:
@@ -53,9 +53,9 @@
           currentIndex = herPreferences.index(currentHusband)
           hisIndex = herPreferences.index(he)
           #Accept the proposal if 
-          #he has more preference in the herpreference list
+          #"he" has higher preference in the herPreference list
           if currentIndex > hisIndex:
-             #New stable match is found for her
+             #New stable match is found for "her"
              womanSpouse[she] = he
              manSpouse[he] = she
              nextManChoice[he] = nextManChoice[he] + 1
