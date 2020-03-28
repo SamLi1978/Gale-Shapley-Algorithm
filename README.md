@@ -16,7 +16,7 @@ own
 
 3. never repeat a rejected proposal
 
-4. keep in memory: position in the list / current
+4. keep in memory: position in the list  current
 partner
 
 Women’s behavior:
